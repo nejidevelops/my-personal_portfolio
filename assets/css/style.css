@@ -117,5 +117,14 @@ nav ul li a:hover::after{
 }
 
 .aboutme{
-    position: relative;
+    margin-top: 10px;
+    display: flex;
+}
+
+.aboutme .newtonpic{
+    margin-left: 50px;
+}
+
+.aboutme .newtonpic img{
+    width: 500px;
 }
