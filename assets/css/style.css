@@ -117,7 +117,26 @@ nav ul li a:hover::after{
 }
 
 .aboutme{
-    margin-top: 10px;
+    margin-top: 50px;
+}
+
+.aboutme #abt{
+    text-align: center;
+    font-size: 50px;
+    position: relative;
+}
+
+.aboutme #abt::after{
+    content: '';
+    position: absolute;
+    width: 15%;
+    height: 4px;
+    background-color: rgba(0,0,0,0.3);
+    left: 550px;
+
+}
+
+.aboutme .about{
     display: flex;
 }
 
@@ -127,13 +146,14 @@ nav ul li a:hover::after{
 
 .aboutme .newtonpic img{
     width: 500px;
+    padding-top: 30px;
 }
 
 .aboutnewto{
     margin-left: 250px;
-    margin-top: 30px;
+    margin-top: 10px;
 }
 
-.aboutnewto h1{
-    line-height: 40px;
+.aboutme .about .aboutnewto h1{
+    line-height: 50px;
 }
