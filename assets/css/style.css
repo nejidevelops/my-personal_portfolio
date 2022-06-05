@@ -7,7 +7,7 @@
     box-sizing: border-box;
 }
 
-body{
+.pageone{
     width: auto;
     height: 100vh;
     background: linear-gradient(rgba(0,0,0,0.3), transparent), url(../img/pexels-negative-space-34153.jpg);
@@ -114,4 +114,8 @@ nav ul li a:hover::after{
     font-size: 30px;
     line-height: 15px;
     margin-left: 5px;
+}
+
+.aboutme{
+    position: relative;
 }
