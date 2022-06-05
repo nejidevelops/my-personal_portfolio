@@ -128,3 +128,12 @@ nav ul li a:hover::after{
 .aboutme .newtonpic img{
     width: 500px;
 }
+
+.aboutnewto{
+    margin-left: 250px;
+    margin-top: 30px;
+}
+
+.aboutnewto h1{
+    line-height: 40px;
+}
