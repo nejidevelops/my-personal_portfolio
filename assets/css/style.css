@@ -157,3 +157,32 @@ nav ul li a:hover::after{
 .aboutme .about .aboutnewto h1{
     line-height: 50px;
 }
+
+.contact{
+    margin-top: 50px;
+    background: linear-gradient(rgba(0,0,0,0.3),transparent), url(../img/pexels-chepté-cormani-1416530.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100px;
+    width: auto;
+}
+
+.contact h1{
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+}
+
+.contact a i{
+    font-size: 50px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 180px;
+    color: #fff;
+}
+
+.contact a i:hover{
+    letter-spacing: 10px;
+    transition: 3s ease-out;
+    color: rgba(0,0,0,0.3);
+}
