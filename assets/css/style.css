@@ -58,3 +58,34 @@ nav ul li a::after{
 nav ul li a:hover::after{
     width: 50%;
 }
+
+.name{
+    color: #fff;
+    position: absolute;
+    bottom: 8%;
+}
+
+.name p{
+    font-size: 50px;
+    font-weight: 600;
+    padding-top: 100px;
+    padding-left: 20px;
+}
+
+.name h1{
+    font-size: 100px;
+    line-height: 160px;
+    margin-left: -0px;
+    color: transparent;
+    -webkit-text-stroke: 1px white;
+    background: url(../img/back.png);
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: load 20s linear infinite;
+}
+
+@keyframes load{
+    100%{
+        background-position: 1000px 0;
+    }
+}
