@@ -110,6 +110,10 @@ nav ul li a:hover::after{
     border: 2px solid #fff;
 }
 
+.name .more a:hover{
+    background-color: rgba(0,0,0,0.3);
+}
+
 .name .more a span{
     font-size: 30px;
     line-height: 15px;
@@ -118,22 +122,22 @@ nav ul li a:hover::after{
 
 .aboutme{
     margin-top: 50px;
+    margin-bottom: 50px;
 }
 
-.aboutme #abt{
+.aboutme .abt{
     text-align: center;
     font-size: 50px;
     position: relative;
 }
 
-.aboutme #abt::after{
+.aboutme .abt::after{
     content: '';
     position: absolute;
     width: 15%;
     height: 4px;
     background-color: rgba(0,0,0,0.3);
     left: 550px;
-
 }
 
 .aboutme .about{
@@ -147,6 +151,39 @@ nav ul li a:hover::after{
 .aboutme .newtonpic img{
     width: 500px;
     padding-top: 30px;
+    /* animation: rotation 20s infinite linear; */
+}
+
+/* @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  } */
+
+.me-now{
+    margin-left: 70px;
+    margin-top: 30px;
+}
+
+.me-now blockquote{
+    margin-left: 85px;
+    font-weight: 600;
+}
+
+.me-now .more{
+    margin-top: 40px;
+    line-height: 40px;
+}
+
+.me-now .more .morep{
+    font-weight: 700;
+}
+
+.me-now .more .morep span{
+    font-weight: 400;
 }
 
 .aboutnewto{
@@ -185,4 +222,172 @@ nav ul li a:hover::after{
     letter-spacing: 10px;
     transition: 3s ease-out;
     color: rgba(0,0,0,0.3);
+}
+
+
+.skillset{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background: #000;
+    color: #fff;
+    position: relative;
+}
+
+.skillset .abt{
+    text-align: center;
+    font-size: 50px;
+    position: relative;
+}
+
+.skillset .abt::after{
+    content: '';
+    position: absolute;
+    width: 15%;
+    height: 4px;
+    background-color: white;
+    left: 550px;
+}
+
+.skillset #success{
+    margin: 0 50px;
+    font-weight: 700;
+}
+
+.skillset .cards{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.skillset .card{
+    position: relative;
+    width: 220px;
+    height: 250px;
+    /* background: rgba(0,0,0,0.3); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skillset .card .percent{
+    position: relative;
+    width: 150px;
+    height: 150px;
+}
+
+.skillset .card .percent svg{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    transform: rotate(270deg);
+}
+
+.skillset .card .percent svg circle{
+    width: 100%;
+    height: 100%;
+    fill: transparent;
+    stroke-width: 2;
+    stroke: #191919;
+    transform: translate( 5px, 5px);
+}
+
+.skillset .card .percent svg circle:nth-child(2){
+    stroke: var(--clr);
+    stroke-dasharray: 440;
+    stroke-dashoffset: calc(440 - (440 * var(--num)) / 100);
+    animation: fadeIn 1s linear forwards infinite;
+    opacity: 0;
+    animation-delay: 2.5s;
+}
+
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.dot{
+    position: absolute;
+    inset: 5px;
+    z-index: 10;
+    transform: rotate(calc(3.6deg * var(--num)));
+    animation: animateDot 2s linear forwards;
+}
+
+@keyframes animateDot{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(calc(3.6deg * var(--num)));
+    }
+}
+
+.dot::before{
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--clr);
+    box-shadow: 0 0 10px var(--clr),
+    0 0 30px var(--clr);
+}
+
+.number{
+    position: absolute;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    animation: fadeIn 1s linear forwards;
+    opacity: 0;
+    animation-delay: 2.5s;
+}
+
+.number h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 2.5em;
+}
+
+.number h2 span{
+    font-weight: 300;
+    font-size: 0.5em;
+}
+
+.number p{
+    font-weight: 300;
+    font-size: 0.75em;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.number .html{
+    color: var(--clr);
+}
+
+.number .css{
+    color: var(--clr);
+}
+
+.number .js{
+    color: var(--clr);
+}
+
+.number .sql{
+    color: var(--clr);
 }
